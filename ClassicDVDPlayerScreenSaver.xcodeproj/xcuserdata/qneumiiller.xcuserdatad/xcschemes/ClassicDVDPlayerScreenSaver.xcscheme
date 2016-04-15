@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EE160E3A1CC15C4500EE76E2"
-               BuildableName = "FaceSaver.saver"
-               BlueprintName = "FaceSaver"
-               ReferencedContainer = "container:FaceSaver.xcodeproj">
+               BuildableName = "ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename.saver"
+               BlueprintName = "ClassicDVDPlayerScreensaver"
+               ReferencedContainer = "container:ClassicDVDPlayerScreenSaver.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE160E3A1CC15C4500EE76E2"
-            BuildableName = "FaceSaver.saver"
-            BlueprintName = "FaceSaver"
-            ReferencedContainer = "container:FaceSaver.xcodeproj">
+            BuildableName = "ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename.saver"
+            BlueprintName = "ClassicDVDPlayerScreensaver"
+            ReferencedContainer = "container:ClassicDVDPlayerScreenSaver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE160E3A1CC15C4500EE76E2"
-            BuildableName = "FaceSaver.saver"
-            BlueprintName = "FaceSaver"
-            ReferencedContainer = "container:FaceSaver.xcodeproj">
+            BuildableName = "ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename.saver"
+            BlueprintName = "ClassicDVDPlayerScreensaver"
+            ReferencedContainer = "container:ClassicDVDPlayerScreenSaver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

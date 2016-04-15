@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FaceSaver.xcodeproj">
+      location = "self:/Users/qneumiiller/FaceSaver/FaceSaver/ClassicDVDPlayerScreenSaver.xcodeproj">
    </FileRef>
 </Workspace>

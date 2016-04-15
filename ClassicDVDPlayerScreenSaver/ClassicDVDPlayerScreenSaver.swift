@@ -1,15 +1,7 @@
-//
-//  ImageStreamView.swift
-//  ImageStream
-//
-//  Created by Kreft, Michal on 11.07.15.
-//  Copyright © 2015 yomajkel. All rights reserved.
-//
-
 import Cocoa
 import ScreenSaver
 
-class ImageStreamView: ScreenSaverView {
+class ClassicDVDPlayerScreenSaver: ScreenSaverView {
     
     var image: NSImage?
     var origin: NSPoint?
@@ -26,23 +18,7 @@ class ImageStreamView: ScreenSaverView {
         loadImage()
     }
     
-    override func startAnimation() {
-        super.startAnimation()
-    }
-    
-    override func stopAnimation() {
-        super.stopAnimation()
-    }
-    
-    override func drawRect(rect: NSRect) {
-        let context: CGContextRef = NSGraphicsContext.currentContext()!.CGContext
-        CGContextSetFillColorWithColor(context, bgColor);
-        CGContextSetAlpha(context, 1);
-        CGContextFillRect(context, rect);
-    }
-    
     override func animateOneFrame() {
-
         if let image = image {
             if origin == nil {
                 origin = SSRandomPointForSizeWithinRect(image.size, frame)
@@ -71,29 +47,18 @@ class ImageStreamView: ScreenSaverView {
                 
                 origin = NSMakePoint(newX, newY)
                 
-                drawOverOldImage(oldOrigin, imageSize: image.size)
+                drawBackground()
                 image.drawAtPoint(origin!, fromRect: NSZeroRect, operation: .CompositeSourceOver, fraction: 1)
             }
 
         }
     }
     
-    override func hasConfigureSheet() -> Bool {
-        return false
-    }
-    
-    override func configureSheet() -> NSWindow? {
-        return nil
-    }
-    
-    func drawOverOldImage(origin: NSPoint, imageSize: NSSize) {
-        let absDest:NSPoint = NSPoint(x:abs(dest.x), y:abs(dest.y));
-        NSBezierPath.fillRect(NSMakeRect(
-            origin.x-absDest.x,
-            origin.y-absDest.y,
-            imageSize.width+(absDest.x*2),
-            imageSize.height+(absDest.y*2))
-        )
+    func drawBackground() {
+        let context: CGContextRef = NSGraphicsContext.currentContext()!.CGContext
+        CGContextSetFillColorWithColor(context, bgColor);
+        CGContextSetAlpha(context, 1);
+        CGContextFillRect(context, frame);
     }
     
     func randomTint(image: NSImage) {

@@ -23,6 +23,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Neumiiller, Quinn. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>FaceSaverView</string>
+	<string>ClassicDVDPlayerScreenSaver</string>
 </dict>
 </plist>

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE160E4A1CC15E4300EE76E2 /* FaceSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE160E491CC15E4300EE76E2 /* FaceSaverView.swift */; settings = {ASSET_TAGS = (); }; };
+		EE160E4A1CC15E4300EE76E2 /* ClassicDVDPlayerScreenSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE160E491CC15E4300EE76E2 /* ClassicDVDPlayerScreenSaver.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE160E3B1CC15C4500EE76E2 /* FaceSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE160E3B1CC15C4500EE76E2 /* ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE160E421CC15C4600EE76E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE160E491CC15E4300EE76E2 /* FaceSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceSaverView.swift; sourceTree = "<group>"; };
+		EE160E491CC15E4300EE76E2 /* ClassicDVDPlayerScreenSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicDVDPlayerScreenSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +30,7 @@
 		EE160E311CC15C4500EE76E2 = {
 			isa = PBXGroup;
 			children = (
-				EE160E3D1CC15C4500EE76E2 /* FaceSaver */,
+				EE160E3D1CC15C4500EE76E2 /* ClassicDVDPlayerScreenSaver */,
 				EE160E3C1CC15C4500EE76E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -38,18 +38,18 @@
 		EE160E3C1CC15C4500EE76E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE160E3B1CC15C4500EE76E2 /* FaceSaver.saver */,
+				EE160E3B1CC15C4500EE76E2 /* ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE160E3D1CC15C4500EE76E2 /* FaceSaver */ = {
+		EE160E3D1CC15C4500EE76E2 /* ClassicDVDPlayerScreenSaver */ = {
 			isa = PBXGroup;
 			children = (
-				EE160E491CC15E4300EE76E2 /* FaceSaverView.swift */,
+				EE160E491CC15E4300EE76E2 /* ClassicDVDPlayerScreenSaver.swift */,
 				EE160E421CC15C4600EE76E2 /* Info.plist */,
 			);
-			path = FaceSaver;
+			path = ClassicDVDPlayerScreenSaver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +65,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EE160E3A1CC15C4500EE76E2 /* FaceSaver */ = {
+		EE160E3A1CC15C4500EE76E2 /* ClassicDVDPlayerScreensaver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE160E451CC15C4600EE76E2 /* Build configuration list for PBXNativeTarget "FaceSaver" */;
+			buildConfigurationList = EE160E451CC15C4600EE76E2 /* Build configuration list for PBXNativeTarget "ClassicDVDPlayerScreensaver" */;
 			buildPhases = (
 				EE160E361CC15C4500EE76E2 /* Sources */,
 				EE160E371CC15C4500EE76E2 /* Frameworks */,
@@ -78,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = FaceSaver;
+			name = ClassicDVDPlayerScreensaver;
 			productName = FaceSaver;
-			productReference = EE160E3B1CC15C4500EE76E2 /* FaceSaver.saver */;
+			productReference = EE160E3B1CC15C4500EE76E2 /* ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE160E351CC15C4500EE76E2 /* Build configuration list for PBXProject "FaceSaver" */;
+			buildConfigurationList = EE160E351CC15C4500EE76E2 /* Build configuration list for PBXProject "ClassicDVDPlayerScreenSaver" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE160E3A1CC15C4500EE76E2 /* FaceSaver */,
+				EE160E3A1CC15C4500EE76E2 /* ClassicDVDPlayerScreensaver */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE160E4A1CC15E4300EE76E2 /* FaceSaverView.swift in Sources */,
+				EE160E4A1CC15E4300EE76E2 /* ClassicDVDPlayerScreenSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,12 +220,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = FaceSaver/Info.plist;
+				INFOPLIST_FILE = ClassicDVDPlayerScreenSaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neumiiller.FaceSaver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FaceSaver/FaceSaver-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neumiiller.ClassicDVDPlayerScreenSaver;
+				PRODUCT_NAME = ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename;
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassicDVDPlayerScreenSaver/ClassicDVDPlayerScreenSaver-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = saver;
 			};
@@ -237,12 +237,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = FaceSaver/Info.plist;
+				INFOPLIST_FILE = ClassicDVDPlayerScreenSaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neumiiller.FaceSaver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FaceSaver/FaceSaver-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neumiiller.ClassicDVDPlayerScreenSaver;
+				PRODUCT_NAME = ClassicDVDPlayerScreenSaver.temp_caseinsensitive_rename;
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassicDVDPlayerScreenSaver/ClassicDVDPlayerScreenSaver-Bridging-Header.h";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
@@ -250,7 +250,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE160E351CC15C4500EE76E2 /* Build configuration list for PBXProject "FaceSaver" */ = {
+		EE160E351CC15C4500EE76E2 /* Build configuration list for PBXProject "ClassicDVDPlayerScreenSaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE160E431CC15C4600EE76E2 /* Debug */,
@@ -259,13 +259,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE160E451CC15C4600EE76E2 /* Build configuration list for PBXNativeTarget "FaceSaver" */ = {
+		EE160E451CC15C4600EE76E2 /* Build configuration list for PBXNativeTarget "ClassicDVDPlayerScreensaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE160E461CC15C4600EE76E2 /* Debug */,
 				EE160E471CC15C4600EE76E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
