@@ -39,12 +39,6 @@ class ImageStreamView: ScreenSaverView {
         CGContextSetFillColorWithColor(context, bgColor);
         CGContextSetAlpha(context, 1);
         CGContextFillRect(context, rect);
-        
-//        if let image = image {
-//            if let origin = origin {
-//                image.drawAtPoint(origin, fromRect: NSZeroRect, operation: .CompositeSourceOver, fraction: 1)
-//            }
-//        }
     }
     
     override func animateOneFrame() {
@@ -54,16 +48,24 @@ class ImageStreamView: ScreenSaverView {
                 origin = SSRandomPointForSizeWithinRect(image.size, frame)
             }
             if let oldOrigin = origin {
-                dest.x = getNewStepDirection(dest.x,
+                let stepX = getNewStepDirection(dest.x,
                     imageSize: image.size.width,
                     originPoint: oldOrigin.x,
                     maxPoint: frame.size.width
                 )
-                dest.y = getNewStepDirection(dest.y,
+                let stepY = getNewStepDirection(dest.y,
                     imageSize: image.size.height,
                     originPoint: oldOrigin.y,
                     maxPoint: frame.size.height
                 )
+                
+                if (stepX != dest.x || stepY != dest.y) {
+                    randomTint(image)
+                }
+                
+                dest.x = stepX;
+                dest.y = stepY;
+                
                 let newX = oldOrigin.x + dest.x
                 let newY = oldOrigin.y + dest.y
                 
@@ -94,6 +96,21 @@ class ImageStreamView: ScreenSaverView {
         )
     }
     
+    func randomTint(image: NSImage) {
+        image.lockFocus()
+        randomColor().set()
+        let imageRect = NSRect(origin: NSZeroPoint, size: image.size)
+        NSRectFillUsingOperation(imageRect, NSCompositingOperation.CompositeSourceAtop)
+        image.unlockFocus()
+    }
+    
+    func randomColor() -> NSColor {
+        let red:CGFloat = CGFloat(drand48())
+        let green:CGFloat = CGFloat(drand48())
+        let blue:CGFloat = CGFloat(drand48())
+        return NSColor(red: red, green: green, blue: blue, alpha: 100)
+    }
+    
     func getNewStepDirection(currentStep:CGFloat, imageSize:CGFloat, originPoint:CGFloat, maxPoint:CGFloat) -> CGFloat {
         let newPoint = originPoint + currentStep
         if(newPoint <= 0 || newPoint >= (maxPoint-imageSize)) {
@@ -104,10 +121,11 @@ class ImageStreamView: ScreenSaverView {
     
     func loadImage() {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            let url = NSURL(string: "https://lh6.ggpht.com/ZHXX5h6hciPNTFc9l2gyCV9vMaJpa4hm6G6Y9QfwOjF5LttwoJjSdnJeiU0dDXfVrEI=w300")
+            let url = NSURL(string: "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Dvd-video-logo.svg/420px-Dvd-video-logo.svg.png")
             let data = NSData(contentsOfURL: url!)
             if let data = data {
                 self.image = NSImage(data: data)
+                self.randomTint(self.image!);
                 self.needsDisplay = true
             }
         }
